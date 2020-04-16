@@ -1,0 +1,41 @@
+@import './fonts.scss';
+
+body {
+    background-color: #ccc;
+    color: black;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+    
+    @media (min-width: 768px) {
+        color: blue;
+    }
+}
+
+.image {
+    background: url('/images/image.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 60px;
+    width: 60px;
+
+    @media (min-width: 768px) {
+        margin: 20px;
+    }
+}
+
+//For css dublicate test
+
+.test {
+    color: white;
+}
+
+.test {
+    color: white;
+}
+
+.test {
+    color: white;
+}
