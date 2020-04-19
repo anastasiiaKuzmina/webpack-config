@@ -12,6 +12,18 @@ module.exports =  {
       filename: '[name].js'
     },
 
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {  //all node_modules im separate file
+            chunks: 'all',
+            name: 'vendor',
+            test: /node_modules/
+          }
+        }
+      },
+    },
+
     module: {
         rules: [
             {
